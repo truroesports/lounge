@@ -7,6 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>E-Sports Lounge Warning</title>
     <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <style>
+        .container {
+            height: 200px;
+            position: relative;
+            border: 3px solid green;
+        }
+
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,8 +30,10 @@
 <main>
     <h2>The E-Sports lounge Website Is Intended To Be Accessed From A Computer,</h2>
     <h2>And Is Not Optimized For Mobile Browsers. If You Wish To Continue, Press Continue Below.</h2>
-    <div class="align-items: center">
-        <button class="glow-on-hover" type="button" onclick="location.href = 'index.html'" >Continue</button>
+    <div class="container">
+        <div class="vertical-center">
+            <button class="glow-on-hover" type="button" onclick="location.href = 'index.html'" >Continue</button>
+        </div>
     </div>
 </main>
 <footer>
