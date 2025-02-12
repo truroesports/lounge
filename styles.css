@@ -291,14 +291,3 @@ footer {
     from {opacity: .4}
     to {opacity: 1}
 }
-.events a {
-    color: rgb(255, 255, 255);
-    background-color: #8918e6;       
-    text-align: center;
-    padding: 14px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 17px;
-    margin: 0 5px;
-}
-p.ridge {border-style: ridge;}
