@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Sports Lounge Home</title>
+    <link rel="icon" type="image/x-icon" href="Images/icon.png">
+</head>
+<body>
+    <header>
+        <h1>Welcome to The E-Sports Lounge!</h1>
+        <div class="topnav">
+            
+            <button class="glow-on-hover" type="button" onclick="location.href = 'index.html'" >Home</button>
+            <button class="glow-on-hover" type="button" onclick="location.href = 'about.html'" >About Us</button>
+            <button class="glow-on-hover" type="button" onclick="location.href = 'games.html'" >Games</button>
+            <button class="glow-on-hover" type="button" onclick="location.href = 'services.html'" >Events</button>
+            <button class="glow-on-hover" type="button" onclick="location.href = 'contact.html'" >Contact Us</button>
+            <button class="glow-on-hover" type="button" onclick="location.href = 'socials.html'" >Our Socials</button>
+
+        </div>
+    </header>
+
+<main>
+    <h1>Welcome to Our Community!</h1>
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 8</div>
+                <div class="image-container">
+                    <img src="Images/IMG_5114 1.jpg" style="width:100%">
+                </div>
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 8</div>
+            <div class="image-container">
+                <img src="Images/IMG_5116 1.jpg" style="width:100%">
+            </div>
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 8</div>
+                <div class="image-container">
+                <img src="Images/IMG_5120 1.jpg" style="width:100%">
+            </div>
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 8</div>
+                <div class="image-container">
+                <img src="Images/IMG_5122 1.jpg" style="width:100%">
+            </div>
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 8</div>
+                <div class="image-container">
+                <img src="Images/IMG_5186 1.jpg" style="width:100%">
+            </div>
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 8</div>
+                <div class="image-container">
+                <img src="Images/IMG_5187 1.jpg" style="width:100%">
+            </div>
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 8</div>
+            <div class="image-container">
+                <img src="Images/IMG_5188 1.jpg" style="width:100%">
+            </div>
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">8 / 8</div>
+            <div class="image-container">
+                <img src="Images/shared image.jpg" style="width:100%">
+            </div>
+            <div class="text"></div>
+        </div>
+
+        <div>
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span> 
+        </div>
+    </div>
+<br>
+
+    
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+</main>
+<footer>
+    <p>&copy; 2025 E-Sports.Lounge.nscc.ca | All rights reserved.</p>
+</footer>
+</body>
+</html>

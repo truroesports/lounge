@@ -1,0 +1,304 @@
+h1 {
+    color:AliceBlue;
+    position: flex;
+    text-align: center;
+}
+h2 {
+    color:AliceBlue;
+    position: flex;
+    text-align: center;
+}
+li {
+    color:AliceBlue;
+}
+p {
+    color:AliceBlue;
+}
+
+header {
+    background-color: #550b80;
+    color: #000000;
+    padding: 35px 22px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.threesections div {
+    width: 33%;
+    float: center;
+}
+
+
+body {
+    background: #282352;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.topnav {
+    display: flex;                /* Flexbox layout */
+    justify-content: center;      /* Center the nav items horizontally */
+    gap: 5px;
+    align-items: center;          /* Center the nav items vertically */
+    height: 51px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 10px;              /* Padding on the sides */
+}
+
+.topnav a {
+    color: rgb(255, 255, 255);
+    background-color: #8918e6;       /* Black background color */
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 5px;                /* Optional: Space between links */
+}
+
+.topnav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: #8f2ae2;
+}
+
+.topnav a.active {
+    background-color: #2326ee;
+    color: rgb(255, 255, 255);
+}
+
+.glow-on-hover {
+    margin: 0;
+    width: 150px;
+    height :50px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.glow-on-hover:active {
+    color: #ffffff
+}
+.glow-on-hover:active:after {
+    background: transparent;
+}
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.email-link {
+    color: #ff0000; 
+    text-decoration: none; 
+    font-size: 16px;
+}
+
+
+.email-link:hover {
+    color: #ee05c7; 
+    text-decoration: underline;
+}
+
+.email-link:visited {
+    color: #18ff03; 
+}
+
+.email-link:visited:hover {
+    color: #ff00ff; 
+    text-decoration: underline; 
+}
+
+.game-link {
+    color: #18ff03;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.game-link:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.game-link:visited {
+    color: #ff00ff;
+}
+
+.game-link:visited:hover {
+    color: #18ff03;
+    text-decoration: underline;
+}
+/* Basic styling for the gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    border: 1px solid #251c72;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%; /* Ensures the image takes up the full width of the container */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: contain; /* Ensures images fit entirely within the container without cropping */
+}
+
+.gallery-item h3 {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: white;
+    margin: 0;
+}
+
+footer {
+    background-color: #550b80;
+    color: #000000;
+    padding: 35px 22px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1140px;
+    position: relative;
+    margin: auto;
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    min-height: 530px;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.events a {
+    color: rgb(255, 255, 255);
+    background-color: #8918e6;       
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 5px;
+}
+p.ridge {border-style: ridge;}
