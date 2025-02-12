@@ -7,6 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>E-Sports Lounge About</title>
     <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <style>
+        #container {
+          height: 100%;
+          width: 100%;
+          display: flex;
+        }
+        #leftThing {
+          width: 25%;
+          background-color: blue;
+        }
+        #content {
+          width: 50%;
+          background-color: green;
+        }
+        #rightThing {
+          width: 25%;
+          background-color: yellow;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,7 +45,19 @@
 <main> 
     <h1 style="text-align:center">Welcome To The E-Sports Lounge!</h1>
     <div>
-        <h2>
+        <div id="container">
+          <div id="leftThing">
+            Left Side Menu
+          </div>
+
+          <div id="content">
+            Random Content
+          </div>
+
+          <div id="rightThing">
+            Right Side Menu
+          </div>
+        </div>
         <h2 style="text-align:center">Hours Of Operation</h2>
         <p style="text-align:center">Sunday    Closed</p>
         <p style="text-align:center">Monday    9am - 4pm</p>
