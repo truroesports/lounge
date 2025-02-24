@@ -185,6 +185,34 @@ body {
     margin: 0;
 }
 
+.contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    padding:20px;
+}
+
+.contact-item {
+    border: 1px solid #251c72;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.contact-item img {
+    width: 100%; /* Ensures the image takes up the full width of the container */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: contain; /* Ensures images fit entirely within the container without cropping */
+}
+
+.contact-item h3 {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: white;
+    margin: 0;
+}
+
 footer {
     background-color: #000000;
     color: #000000;
